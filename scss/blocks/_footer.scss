@@ -1,0 +1,115 @@
+.container{
+    width: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer {
+  margin-top: 59px;
+  padding: 60px 0;
+  border: 2px solid $hover-color-gray;
+  border-style: solid none solid none ;
+}
+
+.input {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 14px 16px;
+  text-indent: 10px;
+  border-radius: 32px;
+  outline: none;
+  border: none;
+  border: 1px solid #f1f1f3;
+  outline: dodgerblue;
+}
+
+.input__box {
+  display: flex;
+  gap: 8px;
+}
+
+.footer__link__title {
+  @include font-style($font, 600, 18px, 23px, $title-color-black);
+  font-size: 18px;
+  color: #262626;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  gap: 14px;
+}
+
+.footer__itmes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.footer__link {
+  @include font-style($font, 400, 16px, 20px, $title-color-gray);
+  gap: 14px;
+  display: flex;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.footer__link:hover{
+    color: $hover-color-yellow;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.links__position {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 70px;
+  width: 100%;
+}
+
+.last__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.section__text {
+    @include font-style($font, 400, 14px, 18px, $title-color-gray);
+}
+
+.footer__images {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.privacy{
+    display: flex;
+    gap: 20px;
+}
+
+.shop__btn{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    @include font-style($font, 600, 14px, 21px, $title-color-black);
+    display: flex;
+    align-items: center;
+    padding: 15px 32px;
+    text-transform: capitalize;
+    border: 1px solid $hover-color-gray;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+.shop__btn:hover{
+    cursor: pointer;
+    background-color: $hover-color-yellow;
+    color: $title-color-black;
+    transition: 0.3s;
+}

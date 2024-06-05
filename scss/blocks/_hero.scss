@@ -1,0 +1,97 @@
+.hero{
+    padding-top: 220px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero__wrapper{
+    display: flex;
+    gap: 38px;
+}
+
+.hero__content{
+    width: 60%;
+    height: 100%;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero__title{
+    text-transform: uppercase;
+    max-width: 540px;
+    @include font-style($font, 600, 38px, 52px, $title-color-black);
+    @include container-size(100%, 100%);
+}
+
+.hero__text{
+    max-width: 675px;
+    @include font-style($font, 400, 16px, 24px, $title-color-gray);
+    @include container-size(100%, 100%);
+    margin-top: 20px;
+}
+
+.hero__actions{
+    display: flex;
+    gap: 0 8px;
+    margin-top: 40px;
+}
+
+.hero__btn__icon{
+    margin-right: 10px;
+}
+
+.hero-link{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    @include font-style($font, 600, 14px, 21px, $title-color-black);
+    display: flex;
+    align-items: center;
+    padding: 15px 32px;
+    text-transform: capitalize;
+    border: 2px solid $hover-color-gray;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+.hero-link:hover{
+    background-color: $hover-color-yellow;
+    color: $title-color-black;
+    transition: 0.3s;
+}
+
+.hero__boxes {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: $border-color-gray;
+    padding: 16px;
+    margin-top: 76px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.hero__box {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    transition: 0.2s;
+}
+
+.hero__box:hover{
+    background: $hover-color-yellow;
+    transition: 0.2s;
+}
+.hero__box__title {
+    text-transform: uppercase;
+    @include font-style($font, 600, 26px, 35px, $title-color-black);
+}
+.hero__box__text {
+    @include font-style($font, 400, 16px, 24px, $title-color-gray);
+    padding-top: 6px;
+}

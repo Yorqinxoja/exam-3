@@ -1,0 +1,35 @@
+// COLORS
+
+$title-color-white: #ffffff;
+$title-color-gray: #656567;
+$title-color-black: #1A1A1A;
+$number-color-gray: #E4E4E7;
+$price-color-gray: #4C4C4D;
+$hover-color-gray: #F7F7F8;
+$hover-color-yellow: #FFD400;
+$border-color-gray: #FAFAFA;
+
+// FONTS
+
+$font: Manrope, sans-serif;
+
+
+// MIXIN
+
+@mixin font-style($ff, $fw, $fs, $lh, $c){
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color: $c;
+}
+
+@mixin container-size($w, $h){
+    width: $w;
+    height: $h;
+}
+
+::selection{
+    background: $hover-color-yellow;
+    color: $title-color-black;
+}

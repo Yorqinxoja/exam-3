@@ -1,0 +1,105 @@
+.container{
+    width: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.fashion__section{
+    margin-top: 150px;
+}
+
+.fashion__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fashion__title{
+    text-transform: uppercase;
+    max-width: 365px;
+    @include font-style($font, 600, 38px, 52px, $title-color-black);
+    @include container-size(100%, 100%);
+}
+
+.fashion__text{
+    max-width: 975px;
+    @include font-style($font, 400, 16px, 24px, $title-color-gray);
+    @include container-size(100%, 100%);
+    margin-top: 20px;
+}
+
+.fashion__links {
+    @include container-size(100%, 70px);
+    border: 2px solid $border-color-gray;
+    border-style: solid none solid none;
+    display: flex;
+    gap: 32px;
+    margin-top: 60px;
+}
+
+.link__items{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.fashion__item {
+    text-transform: uppercase;
+    @include font-style($font, 500, 16px, 22px, $title-color-gray);
+    transition: 0.3s;
+}
+
+.item{
+    transition: 0.3s;
+}
+
+.item:hover{
+    color: $hover-color-yellow;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.fashion__card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    position: relative;
+    @include container-size(298px, 428px);
+    transition: 0.3s;
+}
+
+.fashion__card:hover{
+    box-shadow: rgba(100, 100, 111, 0.764) 0px 7px 29px 0px;
+    transition: 0.3s;
+}
+
+.fashion__icon{
+    background: $title-color-white;
+    position: absolute;
+    padding: 10px;
+    border-radius: 40px;
+    bottom: 0;
+    margin-left: -64px;
+    margin-bottom: 74px;
+}
+
+.fashion__card__title{
+    text-transform: uppercase;
+    @include font-style($font, 600, 16px, 44px, $title-color-black);
+    margin-top: 20px;
+}
+.fashion__card__price {
+    @include font-style($font, 500, 16px, 24px, $price-color-gray);
+}
+.fashion__image__bg {
+    background-color: #f7f7f8;
+    width: 100%;
+    object-fit: cover;
+}
+.fashion__images {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    gap: 30px;
+}

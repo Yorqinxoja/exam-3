@@ -1,0 +1,98 @@
+a{
+    text-decoration: none;
+}
+
+.nav{
+    background: $title-color-white;
+    position: fixed;
+    width: 100%;
+    border: 2px solid $hover-color-gray;
+    z-index: 10;
+}
+
+.burger{
+    visibility: hidden;
+}
+
+.container{
+    width: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+marquee{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: $title-color-black;
+    outline: 2px solid $title-color-black;
+}
+
+.marque__title{
+    @include font-style($font, 500, 14px, 21px, $title-color-white);
+}
+
+.nav__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0px;
+}
+
+.nav__list{
+    display: flex;
+    gap: 0 70px;
+}
+
+.item__link{
+    color: #272727;
+}
+
+.nav__actions{
+    display: flex;
+    gap: 0 40px;
+}
+
+.nav__buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav__btns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav__contact-link{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    @include font-style($font, 600, 14px, 21px, $title-color-black);
+    display: flex;
+    align-items: center;
+    padding: 15px 32px;
+    text-transform: capitalize;
+    border: 2px solid $hover-color-gray;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+.nav__contact-link_support{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    @include font-style($font, 600, 14px, 21px, $title-color-black);
+    display: flex;
+    align-items: center;
+    padding: 15px 32px;
+    text-transform: capitalize;
+    border: 2px solid $hover-color-gray;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+.nav__contact-link:hover, .nav__contact-link_support:hover{
+    background-color: $hover-color-yellow;
+    color: $title-color-black;
+    transition: 0.3s;
+}

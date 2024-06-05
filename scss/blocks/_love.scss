@@ -1,0 +1,76 @@
+.container{
+    width: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.love {
+    margin-top: 150px;
+}
+
+.love__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.love__title{
+    text-transform: uppercase;
+    max-width: 344px;
+    @include font-style($font, 600, 38px, 52px, $title-color-black);
+    @include container-size(100%, 100%);
+}
+
+.love__text{
+    max-width: 924px;
+    @include font-style($font, 400, 16px, 24px, $title-color-gray);
+    @include container-size(100%, 100%);
+    margin-top: 20px;
+}
+.card__love {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 40px;
+    background-color: $title-color-white;
+    border-radius: 16px;
+    transition: 0.2s;
+}
+
+.card__love:hover{
+    background-color: $hover-color-yellow;
+    transition: 0.2s;
+}
+
+.love__card__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.love__card__title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.love__card__text {
+    max-width: 317px;
+    @include font-style($font, 400, 16px, 24px, $title-color-gray);
+    @include container-size(100%, 100%);
+    margin-top: 30px;
+}
+
+.author__name {
+    @include font-style($font, 500, 16px, 24px, $title-color-black);
+}
+
+.love__cards {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: $hover-color-gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 16px;
+    margin-top: 84px;
+}
